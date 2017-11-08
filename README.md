@@ -237,3 +237,43 @@ atomselect14
 21
 
 
+
+
+
+
+
+Luego, para calcular el RMSD ambas selecciones DEBEN tener el mismo numero de atomos, por lo que use esto:
+
+
+
+
+>Main< (VMD) 21 % set allahuakbar [atomselect 0 "chain A and name CA and resid 75 to 85"]
+
+
+
+
+atomselect15
+
+
+
+
+>Main< (VMD) 22 % set kakaroto [atomselect 1 "chain A and name CA and resid 235 to 245"]
+
+
+
+
+atomselect16
+
+
+
+
+>Main< (VMD) 23 % measure rmsd $allahuakbar $kakaroto
+
+
+
+
+16.17098617553711
+
+
+
+
