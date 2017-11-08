@@ -189,3 +189,51 @@ atomselect12
 
 
 Asi quedaron las dos centradas
+
+
+
+
+
+DESPUES para volver a seleccionar los atomos de las alfas helices, puse:
+
+
+
+>Main< (VMD) 16 % set allahuakbar [atomselect 0 "chain A and name CA and resid 72 to 99"]
+
+
+
+
+atomselect13
+
+
+
+
+
+>Main< (VMD) 17 % $allahuakbar num
+
+
+
+
+28
+
+
+
+
+>Main< (VMD) 18 % set kakaroto [atomselect 1 "name CA and resid 230 to 250"]
+
+
+
+
+atomselect14
+
+
+
+
+>Main< (VMD) 19 % $kakaroto num
+
+
+
+
+21
+
+
