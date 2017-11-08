@@ -277,3 +277,44 @@ atomselect16
 
 
 
+
+Luego, use:
+
+
+
+>Main< (VMD) 24 % set transformation_matrix [measure fit $allahuakbar $kakaroto]
+
+
+
+
+{0.017742440104484558 0.9216606020927429 -0.3875911831855774 0.3710159659385681} {0.8243417143821716 -0.23285804688930511 -0.515982449054718 -3.064300775527954} {-0.5658144354820251 -0.31035277247428894 -0.7638947367668152 -8.250924110412598} {0.0 0.0 0.0 1.0}
+
+
+
+
+>Main< (VMD) 25 % set allahuakbar [atomselect 0 "all"]
+
+
+
+
+atomselect17
+
+
+
+
+>Main< (VMD) 26 % $allahuakbar move $transformation_matrix
+
+
+
+ahi quedaron las dos solapadas. El transformation matrix se usa para solapar a las proteinas, las rota y las encaja.
+
+
+
+
+
+
+
+
+
+
+
