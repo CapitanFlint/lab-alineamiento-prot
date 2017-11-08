@@ -24,3 +24,168 @@ apretando el numero 2 en la pantalla donde esta la proteina tridimensional, se p
 
 
 
+PARTE 2.
+
+
+
+PRoteínas usadas: 2XNE y 1AFO.
+
+
+
+Viendo en sequence viewer, vemos que en la proteina 2XNE la alfa helice mas larga esta entre los aminoacidos 230 a 250.
+
+
+
+La proteína 1AFO la alfa helice esta entre los aminoacidos 72 y 98.
+
+
+
+Luego fui a consola : Extensions ---> Tk console. y ahi puse help.
+
+
+
+
+Luego se pone:     set all [atomselect ID (el id de la proteina que esta en vmd main) "SELECCION"]
+
+
+
+En selección va lo que quiero usar, por ejemplo yo puse "protein and resid 72 to 98" para seleccionar la alfa helice de la proteina 1AFO.
+
+
+
+
+todo lo que puse respecto a 1AFO fue:
+
+
+>Main< (VMD) 2 % set allahuakbar [atomselect 0 "protein and resid 72 to 98"]
+
+
+
+
+atomselect9 (resultado)
+
+
+
+
+>Main< (VMD) 3 % measure center $allahuakbar 
+
+
+
+
+2.311387300491333 -0.8143188953399658 0.7358484864234924 (resultado en coordenadas. El primero es x, el segundo y y el tercero z)
+
+
+
+
+>Main< (VMD) 4 % measure minmax $allahuakbar
+
+
+
+
+
+{-20.533000946044922 -16.20800018310547 -16.91200065612793} {22.46500015258789 11.418000221252441 16.139999389648438} (resultado de la localizacion verdadera de la proteina. Los primeros 3 valores son desde el eje hacia arriba y los otros 3 desde el eje hacia abajo, pór lo que sumando los valores absolutos tenemos el espacio total ocupado por la proteina).
+
+
+
+
+
+>Main< (VMD) 5 % eval vecadd [$allahuakbar get charge]
+
+
+
+
+0.0 (esto da la carga neta, como es 0 indica carga neutra.).
+
+
+
+
+
+
+posteriormente, use: 
+
+
+
+>Main< (VMD) 6 % set kakaroto [atomselect 1 "protein and resid 230 to 250"]
+
+
+
+
+atomselect10
+
+
+
+
+>Main< (VMD) 7 % measure center $kakaroto
+
+
+
+
+19.23552131652832 -42.01963806152344 -12.19515323638916
+
+
+
+
+>Main< (VMD) 8 % measure minmax $kakaroto
+
+
+
+
+{9.098999977111816 -56.18199920654297 -24.64299964904785} {26.27199935913086 -28.45199966430664 -0.2770000100135803}
+
+
+
+
+>Main< (VMD) 9 % eval vecadd [$kakaroto get charge]
+
+
+
+
+0.0
+
+
+
+
+>Main< (VMD) 10 % 
+
+
+
+
+Luego, seleccione a la proteina 1AFO:  esto es para centrar a la proteina
+
+
+
+>Main< (VMD) 10 % set allahuakbar [atomselect 0 "all"]
+
+
+
+
+atomselect11
+
+
+
+
+>Main< (VMD) 11 % $allahuakbar moveby [vecinvert [measure center $allahuakbar]
+
+
+
+
+
+Luego use a la 2XNE:
+
+
+>Main< (VMD) 12 % set kakaroto [atomselect 1 "all"]
+
+
+
+
+atomselect12
+
+
+
+
+>Main< (VMD) 13 % $kakaroto moveby [vecinvert [measure center $kakaroto]]
+
+
+
+
+Asi quedaron las dos centradas
