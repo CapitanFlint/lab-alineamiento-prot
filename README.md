@@ -323,7 +323,9 @@ SEGUNDA PARTE 15/11/2017
 
 
 
+
 Hoy trabajaremos con la proteína (PDB) 3OTJ.
+
 
 
 
@@ -333,10 +335,23 @@ En un archivo PDB los datos provienen de un experimento de cristalografía. GEne
 
 
 
+
 PAra seleccionar los átomos de una cadena especifica se hace:
 
 
 
+
 Save trajectory (en MAIN del VMD), luego se escribe en sleected atoms Chain A (o la que sea) y se le da a Save y escoger destino.
+
+
+
+
+
+
+PAra llegar a Save trajectory, hacemos click en la proteína en VMD Main y click derecho ---> Save coordenates.
+
+
+
+
 
 
