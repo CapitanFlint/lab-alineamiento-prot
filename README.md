@@ -361,12 +361,18 @@ Tambien se puede exribir "chain E and name CA" sin comillas.
 
 
 
-Grafico de Ramachandral define los residuos que formaran parte de una determinada estructura espacial : laminas beta, alfa helice...
+Grafico de Ramachandran define los residuos que formaran parte de una determinada estructura espacial : laminas beta, alfa helice...
 
 
 
 
 
 
+PAra ir a grafico de ramachandran, es en Extensions ---> ramachandran....
 
+
+
+
+
+Buscar 3 serine proteasas más y guardar la cadena que corresponde a esas serine proteasas.
 
