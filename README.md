@@ -376,3 +376,24 @@ PAra ir a grafico de ramachandran, es en Extensions ---> ramachandran....
 
 Buscar 3 serine proteasas más y guardar la cadena que corresponde a esas serine proteasas.
 
+
+
+
+Usé 1SBT (cadena A), 1AGS (cadenas A,B) y 2SGA (Cadena A).
+
+
+
+
+
+Para 2SGA usé el comando chain A and protein para sacarle el agua. Se usa and protein para dejar solo la proteina.
+
+
+
+Luego de curar a las proteinas (archivos correo) vamos a etensions y a multiseq.
+
+
+
+Luego, escojo una region y la mnarco y apreto tool y luego stamp alignment y pongo selected regions , en scanscore puse 2 y en el de abajo puse 5. Este programa rota y centra automaticamente y esto define para la region que selecicone (que creo que esta conservada).
+
+
+
