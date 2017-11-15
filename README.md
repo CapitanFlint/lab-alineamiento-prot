@@ -353,7 +353,20 @@ PAra llegar a Save trajectory, hacemos click en la proteína en VMD Main y click
 
 
 
+
+
 Tambien se puede exribir "chain E and name CA" sin comillas.
+
+
+
+
+
+Grafico de Ramachandral define los residuos que formaran parte de una determinada estructura espacial : laminas beta, alfa helice...
+
+
+
+
+
 
 
 
